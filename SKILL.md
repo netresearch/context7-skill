@@ -108,3 +108,8 @@ If the script fails:
 - **Topic filtering**: Use specific topics for focused results
 - **Search first**: Always search to find the correct library ID
 - **Caching**: Results are not cached; each call fetches fresh data
+
+---
+
+> **Contributing:** Improvements to this skill should be submitted to the source repository:
+> https://github.com/netresearch/context7-skill
