@@ -1,6 +1,6 @@
 ---
 name: context7
-description: "Fetch up-to-date library documentation via Context7 REST API. Use when needing current API docs, framework patterns, or code examples for any library. Lightweight alternative to Context7 MCP with no persistent context overhead. By Netresearch."
+description: "Use when needing API docs, framework patterns, or code examples for any library. Fetches up-to-date documentation via Context7 REST API."
 ---
 
 # Context7 Documentation Lookup Skill
