@@ -1,6 +1,6 @@
 ---
 name: context7
-description: "Use when needing current API docs, framework patterns, or code examples for any library. Fetches up-to-date documentation via Context7 REST API."
+description: "Use when needing API docs, framework patterns, or code examples for any library. Fetches up-to-date documentation via Context7 REST API."
 ---
 
 # Context7 Documentation Lookup Skill
