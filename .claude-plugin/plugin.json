@@ -6,9 +6,12 @@
   "license": "MIT",
   "author": {
     "name": "Netresearch DTT GmbH",
-    "email": "info@netresearch.de"
+    "url": "https://github.com/netresearch/context7-skill"
   },
   "skills": [
     "./skills/context7"
-  ]
+  ],
+  "support": {
+    "issues": "https://github.com/netresearch/context7-skill/issues"
+  }
 }
