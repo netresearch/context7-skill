@@ -10,8 +10,5 @@
   },
   "skills": [
     "./skills/context7"
-  ],
-  "support": {
-    "issues": "https://github.com/netresearch/context7-skill/issues"
-  }
+  ]
 }
