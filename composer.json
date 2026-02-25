@@ -1,0 +1,23 @@
+{
+  "name": "netresearch/agent-context7",
+  "description": "Netresearch AI skill for fetching up-to-date API docs and framework patterns via Context7",
+  "type": "ai-agent-skill",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Netresearch DTT GmbH",
+      "homepage": "https://www.netresearch.de/",
+      "role": "Manufacturer"
+    }
+  ],
+  "require": {
+    "netresearch/composer-agent-skill-plugin": "*"
+  },
+  "extra": {
+    "ai-agent-skill": "skills/context7/SKILL.md"
+  },
+  "support": {
+    "issues": "https://github.com/netresearch/context7-skill/issues",
+    "source": "https://github.com/netresearch/context7-skill"
+  }
+}
