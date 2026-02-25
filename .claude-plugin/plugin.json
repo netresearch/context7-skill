@@ -6,7 +6,7 @@
   "license": "MIT",
   "author": {
     "name": "Netresearch DTT GmbH",
-    "url": "https://github.com/netresearch/context7-skill"
+    "url": "https://www.netresearch.de"
   },
   "skills": [
     "./skills/context7"
