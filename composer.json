@@ -1,5 +1,8 @@
 {
-  "name": "netresearch/agent-context7",
+  "name": "netresearch/context7-skill",
+  "replace": {
+    "netresearch/agent-context7": "self.version"
+  },
   "description": "Netresearch AI skill for fetching up-to-date API docs and framework patterns via Context7",
   "type": "ai-agent-skill",
   "license": "MIT",
