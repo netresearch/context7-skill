@@ -64,7 +64,8 @@ scripts/context7.sh docs "/prisma/prisma" "queries"
 context7/
 ├── SKILL.md              # AI instructions
 ├── README.md             # This file
-├── LICENSE               # MIT license
+├── LICENSE-MIT           # Code license (MIT)
+├── LICENSE-CC-BY-SA-4.0  # Content license (CC-BY-SA-4.0) license
 ├── scripts/              # Automation scripts
 │   └── context7.sh       # REST API wrapper
 └── .github/
@@ -98,8 +99,12 @@ Contributions welcome! Please submit PRs for:
 
 ## License
 
-MIT License - See [LICENSE](LICENSE) for details.
+This project uses split licensing:
 
+- **Code** (scripts, workflows, configs): [MIT](LICENSE-MIT)
+- **Content** (skill definitions, documentation, references): [CC-BY-SA-4.0](LICENSE-CC-BY-SA-4.0)
+
+See the individual license files for full terms.
 ## Credits
 
 - Context7 API by [Upstash](https://upstash.com/)
