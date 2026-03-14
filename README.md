@@ -65,7 +65,7 @@ context7/
 ├── SKILL.md              # AI instructions
 ├── README.md             # This file
 ├── LICENSE-MIT           # Code license (MIT)
-├── LICENSE-CC-BY-SA-4.0  # Content license (CC-BY-SA-4.0) license
+├── LICENSE-CC-BY-SA-4.0  # Content license (CC-BY-SA-4.0)
 ├── scripts/              # Automation scripts
 │   └── context7.sh       # REST API wrapper
 └── .github/
