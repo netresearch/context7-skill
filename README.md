@@ -11,26 +11,40 @@ Fetch up-to-date library documentation via Context7 REST API. Lightweight altern
 
 ## Installation
 
-### Option 1: Via Netresearch Marketplace (Recommended)
+### Marketplace (Recommended)
+
+Add the [Netresearch marketplace](https://github.com/netresearch/claude-code-marketplace) once, then browse and install skills:
 
 ```bash
+# Claude Code
 /plugin marketplace add netresearch/claude-code-marketplace
 ```
 
-Then browse skills with `/plugin`.
+### npx ([skills.sh](https://skills.sh))
 
-### Option 2: Download Release
-
-Download the [latest release](https://github.com/netresearch/context7-skill/releases/latest) and extract to `~/.claude/skills/context7/`
-
-### Option 3: Composer (PHP projects)
+Install with any [Agent Skills](https://agentskills.io)-compatible agent:
 
 ```bash
-composer require netresearch/agent-context7
+npx skills add https://github.com/netresearch/context7-skill --skill context7
 ```
 
-**Requires:** [netresearch/composer-agent-skill-plugin](https://github.com/netresearch/composer-agent-skill-plugin)
+### Download Release
 
+Download the [latest release](https://github.com/netresearch/context7-skill/releases/latest) and extract to your agent's skills directory.
+
+### Git Clone
+
+```bash
+git clone https://github.com/netresearch/context7-skill.git
+```
+
+### Composer (PHP Projects)
+
+```bash
+composer require netresearch/context7-skill
+```
+
+Requires [netresearch/composer-agent-skill-plugin](https://github.com/netresearch/composer-agent-skill-plugin).
 ## Usage
 
 The skill triggers on keywords like:
