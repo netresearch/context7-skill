@@ -1,6 +1,6 @@
 ---
 name: context7
-description: "ALWAYS use when looking up library documentation, API references, framework patterns, or code examples for ANY library (React, Next.js, Vue, Django, Laravel, etc.). Fetches current docs via Context7 REST API. Triggers on: how to use library, API docs, framework pattern, import usage, library example."
+description: "Use when looking up library documentation, API references, framework patterns, or code examples for ANY library (React, Next.js, Vue, Django, Laravel, etc.). Fetches current docs via Context7 REST API. Triggers on: how to use library, API docs, framework pattern, import usage, library example."
 license: "(MIT AND CC-BY-SA-4.0)"
 compatibility: "Requires curl or fetch, jq."
 metadata:
