@@ -1,6 +1,16 @@
 ---
 name: context7
-description: "Use when needing API docs, framework patterns, or code examples for any library. Fetches up-to-date documentation via Context7 REST API."
+description: "ALWAYS use when looking up library documentation, API references, framework patterns, or code examples for ANY library (React, Next.js, Vue, Django, Laravel, etc.). Fetches current docs via Context7 REST API. Triggers on: how to use library, API docs, framework pattern, import usage, library example."
+license: "(MIT AND CC-BY-SA-4.0)"
+compatibility: "Requires curl or fetch, jq."
+metadata:
+  version: "1.1.7"
+  repository: "https://github.com/netresearch/context7-skill"
+  author: "Netresearch DTT GmbH"
+allowed-tools:
+  - "Bash(curl:*)"
+  - "Bash(jq:*)"
+  - "Read"
 ---
 
 # Context7 Documentation Lookup Skill

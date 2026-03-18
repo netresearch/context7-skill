@@ -1,0 +1,34 @@
+[
+  {
+    "name": "lookup-react-hooks",
+    "prompt": "Look up React hooks documentation",
+    "assertions": [
+      {
+        "type": "tool_use",
+        "tool": "Bash",
+        "description": "Runs context7.sh to search and fetch React docs"
+      },
+      {
+        "type": "content_contains",
+        "value": "hooks",
+        "description": "Returns React hooks documentation"
+      }
+    ]
+  },
+  {
+    "name": "find-nextjs-api-routes",
+    "prompt": "Find Next.js API route examples",
+    "assertions": [
+      {
+        "type": "tool_use",
+        "tool": "Bash",
+        "description": "Runs context7.sh to fetch Next.js API route docs"
+      },
+      {
+        "type": "content_contains",
+        "value": "route",
+        "description": "Returns API route patterns and examples"
+      }
+    ]
+  }
+]
