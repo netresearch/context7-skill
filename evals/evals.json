@@ -6,12 +6,17 @@
       {
         "type": "tool_use",
         "tool": "Bash",
-        "description": "Runs context7.sh to search and fetch React docs"
+        "description": "Runs context7.sh search to find React library ID"
+      },
+      {
+        "type": "tool_use",
+        "tool": "Bash",
+        "description": "Runs context7.sh docs to fetch React hooks documentation"
       },
       {
         "type": "content_contains",
-        "value": "hooks",
-        "description": "Returns React hooks documentation"
+        "value": "hook",
+        "description": "Response discusses React hooks"
       }
     ]
   },
@@ -22,12 +27,306 @@
       {
         "type": "tool_use",
         "tool": "Bash",
-        "description": "Runs context7.sh to fetch Next.js API route docs"
+        "description": "Runs context7.sh search then docs for Next.js"
       },
       {
         "type": "content_contains",
         "value": "route",
         "description": "Returns API route patterns and examples"
+      }
+    ]
+  },
+  {
+    "name": "django-orm-queries",
+    "prompt": "How do I write Django ORM queries with filters?",
+    "assertions": [
+      {
+        "type": "tool_use",
+        "tool": "Bash",
+        "description": "Searches for Django library ID"
+      },
+      {
+        "type": "tool_use",
+        "tool": "Bash",
+        "description": "Fetches Django ORM/query documentation"
+      },
+      {
+        "type": "content_contains",
+        "value": "filter",
+        "description": "Response includes query filter information"
+      }
+    ]
+  },
+  {
+    "name": "vue-composition-api",
+    "prompt": "Show me Vue 3 Composition API patterns",
+    "assertions": [
+      {
+        "type": "tool_use",
+        "tool": "Bash",
+        "description": "Searches for Vue library and fetches composition API docs"
+      },
+      {
+        "type": "content_contains",
+        "value": "composition",
+        "description": "Response covers Composition API"
+      }
+    ]
+  },
+  {
+    "name": "prisma-schema-definition",
+    "prompt": "How do I define a Prisma schema with relations?",
+    "assertions": [
+      {
+        "type": "tool_use",
+        "tool": "Bash",
+        "description": "Fetches Prisma schema documentation via context7.sh"
+      },
+      {
+        "type": "content_contains",
+        "value": "schema",
+        "description": "Response includes schema definition patterns"
+      }
+    ]
+  },
+  {
+    "name": "express-middleware",
+    "prompt": "Express middleware documentation",
+    "assertions": [
+      {
+        "type": "tool_use",
+        "tool": "Bash",
+        "description": "Fetches Express middleware docs"
+      },
+      {
+        "type": "content_contains",
+        "value": "middleware",
+        "description": "Response covers middleware patterns"
+      }
+    ]
+  },
+  {
+    "name": "tailwind-config",
+    "prompt": "How do I configure Tailwind CSS custom colors?",
+    "assertions": [
+      {
+        "type": "tool_use",
+        "tool": "Bash",
+        "description": "Searches for Tailwind library and fetches config docs"
+      },
+      {
+        "type": "content_contains",
+        "value": "color",
+        "description": "Response includes color configuration"
+      }
+    ]
+  },
+  {
+    "name": "info-mode-usage",
+    "prompt": "I need a conceptual guide on Next.js App Router architecture",
+    "assertions": [
+      {
+        "type": "tool_use",
+        "tool": "Bash",
+        "description": "Fetches docs using info mode for conceptual content"
+      },
+      {
+        "type": "content_contains",
+        "value": "app",
+        "description": "Response covers App Router concepts"
+      }
+    ]
+  },
+  {
+    "name": "two-step-search-then-docs",
+    "prompt": "What's the API for Fastify request validation?",
+    "assertions": [
+      {
+        "type": "tool_use",
+        "tool": "Bash",
+        "description": "First runs context7.sh search to find Fastify library ID"
+      },
+      {
+        "type": "tool_use",
+        "tool": "Bash",
+        "description": "Then runs context7.sh docs with the discovered library ID"
+      }
+    ]
+  },
+  {
+    "name": "laravel-eloquent",
+    "prompt": "Show me Laravel Eloquent relationship examples",
+    "assertions": [
+      {
+        "type": "tool_use",
+        "tool": "Bash",
+        "description": "Searches for Laravel and fetches Eloquent docs"
+      },
+      {
+        "type": "content_contains",
+        "value": "relationship",
+        "description": "Response covers Eloquent relationships"
+      }
+    ]
+  },
+  {
+    "name": "negative-general-programming",
+    "prompt": "Explain what a closure is in JavaScript",
+    "assertions": [
+      {
+        "type": "tool_use_absent",
+        "tool": "Bash",
+        "description": "Should NOT invoke context7.sh for general programming concepts"
+      },
+      {
+        "type": "content_contains",
+        "value": "closure",
+        "description": "Answers the question directly without API lookup"
+      }
+    ]
+  },
+  {
+    "name": "negative-code-review",
+    "prompt": "Review this React component for code quality issues",
+    "assertions": [
+      {
+        "type": "tool_use_absent",
+        "tool": "Bash",
+        "description": "Should NOT invoke context7.sh for code review tasks"
+      }
+    ]
+  },
+  {
+    "name": "import-trigger",
+    "prompt": "I'm importing `from fastapi import FastAPI` -- how do I add route parameters?",
+    "assertions": [
+      {
+        "type": "tool_use",
+        "tool": "Bash",
+        "description": "Recognizes import statement as trigger and fetches FastAPI docs"
+      },
+      {
+        "type": "content_contains",
+        "value": "parameter",
+        "description": "Response covers route parameters"
+      }
+    ]
+  },
+  {
+    "name": "typescript-zod-validation",
+    "prompt": "How do I use Zod for TypeScript schema validation?",
+    "assertions": [
+      {
+        "type": "tool_use",
+        "tool": "Bash",
+        "description": "Searches for Zod library and fetches validation docs"
+      },
+      {
+        "type": "content_contains",
+        "value": "schema",
+        "description": "Response includes Zod schema patterns"
+      }
+    ]
+  },
+  {
+    "name": "python-sqlalchemy",
+    "prompt": "SQLAlchemy session and transaction patterns",
+    "assertions": [
+      {
+        "type": "tool_use",
+        "tool": "Bash",
+        "description": "Searches for SQLAlchemy and fetches session docs"
+      },
+      {
+        "type": "content_contains",
+        "value": "session",
+        "description": "Response covers session management"
+      }
+    ]
+  },
+  {
+    "name": "negative-refactoring",
+    "prompt": "Refactor this function to use async/await",
+    "assertions": [
+      {
+        "type": "tool_use_absent",
+        "tool": "Bash",
+        "description": "Should NOT invoke context7.sh for refactoring tasks"
+      }
+    ]
+  },
+  {
+    "name": "topic-specificity",
+    "prompt": "How does React Suspense work with server components?",
+    "assertions": [
+      {
+        "type": "tool_use",
+        "tool": "Bash",
+        "description": "Fetches docs with specific topic like 'suspense' or 'server components'"
+      },
+      {
+        "type": "content_contains",
+        "value": "suspense",
+        "description": "Response specifically addresses Suspense"
+      }
+    ]
+  },
+  {
+    "name": "spring-boot-java",
+    "prompt": "What annotations does Spring Boot use for REST controllers?",
+    "assertions": [
+      {
+        "type": "tool_use",
+        "tool": "Bash",
+        "description": "Searches for Spring Boot and fetches annotation docs"
+      },
+      {
+        "type": "content_contains",
+        "value": "annotation",
+        "description": "Response covers Spring Boot annotations"
+      }
+    ]
+  },
+  {
+    "name": "drizzle-orm-schema",
+    "prompt": "Show me Drizzle ORM table definitions",
+    "assertions": [
+      {
+        "type": "tool_use",
+        "tool": "Bash",
+        "description": "Searches for Drizzle ORM and fetches schema docs"
+      },
+      {
+        "type": "content_contains",
+        "value": "table",
+        "description": "Response includes table definition patterns"
+      }
+    ]
+  },
+  {
+    "name": "astro-framework",
+    "prompt": "How do I create pages in Astro?",
+    "assertions": [
+      {
+        "type": "tool_use",
+        "tool": "Bash",
+        "description": "Searches for Astro framework and fetches page docs"
+      },
+      {
+        "type": "content_contains",
+        "value": "page",
+        "description": "Response covers Astro page creation"
+      }
+    ]
+  },
+  {
+    "name": "negative-debugging",
+    "prompt": "Debug why my variable is undefined in this code block",
+    "assertions": [
+      {
+        "type": "tool_use_absent",
+        "tool": "Bash",
+        "description": "Should NOT invoke context7.sh for debugging business logic"
       }
     ]
   }
