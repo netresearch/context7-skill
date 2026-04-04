@@ -5,13 +5,13 @@
     "assertions": [
       {
         "type": "tool_use",
-        "tool": "Bash",
-        "description": "Runs context7.sh search to find React library ID"
+        "description": "Runs context7.sh search to find React library ID",
+        "value": "Bash"
       },
       {
         "type": "tool_use",
-        "tool": "Bash",
-        "description": "Runs context7.sh docs to fetch React hooks documentation"
+        "description": "Runs context7.sh docs to fetch React hooks documentation",
+        "value": "Bash"
       },
       {
         "type": "content_contains",
@@ -26,8 +26,8 @@
     "assertions": [
       {
         "type": "tool_use",
-        "tool": "Bash",
-        "description": "Runs context7.sh search then docs for Next.js"
+        "description": "Runs context7.sh search then docs for Next.js",
+        "value": "Bash"
       },
       {
         "type": "content_contains",
@@ -42,13 +42,13 @@
     "assertions": [
       {
         "type": "tool_use",
-        "tool": "Bash",
-        "description": "Searches for Django library ID"
+        "description": "Searches for Django library ID",
+        "value": "Bash"
       },
       {
         "type": "tool_use",
-        "tool": "Bash",
-        "description": "Fetches Django ORM/query documentation"
+        "description": "Fetches Django ORM/query documentation",
+        "value": "Bash"
       },
       {
         "type": "content_contains",
@@ -63,8 +63,8 @@
     "assertions": [
       {
         "type": "tool_use",
-        "tool": "Bash",
-        "description": "Searches for Vue library and fetches composition API docs"
+        "description": "Searches for Vue library and fetches composition API docs",
+        "value": "Bash"
       },
       {
         "type": "content_contains",
@@ -79,8 +79,8 @@
     "assertions": [
       {
         "type": "tool_use",
-        "tool": "Bash",
-        "description": "Fetches Prisma schema documentation via context7.sh"
+        "description": "Fetches Prisma schema documentation via context7.sh",
+        "value": "Bash"
       },
       {
         "type": "content_contains",
@@ -95,8 +95,8 @@
     "assertions": [
       {
         "type": "tool_use",
-        "tool": "Bash",
-        "description": "Fetches Express middleware docs"
+        "description": "Fetches Express middleware docs",
+        "value": "Bash"
       },
       {
         "type": "content_contains",
@@ -111,8 +111,8 @@
     "assertions": [
       {
         "type": "tool_use",
-        "tool": "Bash",
-        "description": "Searches for Tailwind library and fetches config docs"
+        "description": "Searches for Tailwind library and fetches config docs",
+        "value": "Bash"
       },
       {
         "type": "content_contains",
@@ -127,8 +127,8 @@
     "assertions": [
       {
         "type": "tool_use",
-        "tool": "Bash",
-        "description": "Fetches docs using info mode for conceptual content"
+        "description": "Fetches docs using info mode for conceptual content",
+        "value": "Bash"
       },
       {
         "type": "content_contains",
@@ -143,13 +143,13 @@
     "assertions": [
       {
         "type": "tool_use",
-        "tool": "Bash",
-        "description": "First runs context7.sh search to find Fastify library ID"
+        "description": "First runs context7.sh search to find Fastify library ID",
+        "value": "Bash"
       },
       {
         "type": "tool_use",
-        "tool": "Bash",
-        "description": "Then runs context7.sh docs with the discovered library ID"
+        "description": "Then runs context7.sh docs with the discovered library ID",
+        "value": "Bash"
       }
     ]
   },
@@ -159,8 +159,8 @@
     "assertions": [
       {
         "type": "tool_use",
-        "tool": "Bash",
-        "description": "Searches for Laravel and fetches Eloquent docs"
+        "description": "Searches for Laravel and fetches Eloquent docs",
+        "value": "Bash"
       },
       {
         "type": "content_contains",
@@ -175,8 +175,8 @@
     "assertions": [
       {
         "type": "tool_use_absent",
-        "tool": "Bash",
-        "description": "Should NOT invoke context7.sh for general programming concepts"
+        "description": "Should NOT invoke context7.sh for general programming concepts",
+        "value": "Bash"
       },
       {
         "type": "content_contains",
@@ -191,8 +191,13 @@
     "assertions": [
       {
         "type": "tool_use_absent",
-        "tool": "Bash",
-        "description": "Should NOT invoke context7.sh for code review tasks"
+        "description": "Should NOT invoke context7.sh for code review tasks",
+        "value": "Bash"
+      },
+      {
+        "type": "content_contains",
+        "value": "review",
+        "description": "Performs code review directly without external docs lookup"
       }
     ]
   },
@@ -202,8 +207,8 @@
     "assertions": [
       {
         "type": "tool_use",
-        "tool": "Bash",
-        "description": "Recognizes import statement as trigger and fetches FastAPI docs"
+        "description": "Recognizes import statement as trigger and fetches FastAPI docs",
+        "value": "Bash"
       },
       {
         "type": "content_contains",
@@ -218,8 +223,8 @@
     "assertions": [
       {
         "type": "tool_use",
-        "tool": "Bash",
-        "description": "Searches for Zod library and fetches validation docs"
+        "description": "Searches for Zod library and fetches validation docs",
+        "value": "Bash"
       },
       {
         "type": "content_contains",
@@ -234,8 +239,8 @@
     "assertions": [
       {
         "type": "tool_use",
-        "tool": "Bash",
-        "description": "Searches for SQLAlchemy and fetches session docs"
+        "description": "Searches for SQLAlchemy and fetches session docs",
+        "value": "Bash"
       },
       {
         "type": "content_contains",
@@ -250,8 +255,13 @@
     "assertions": [
       {
         "type": "tool_use_absent",
-        "tool": "Bash",
-        "description": "Should NOT invoke context7.sh for refactoring tasks"
+        "description": "Should NOT invoke context7.sh for refactoring tasks",
+        "value": "Bash"
+      },
+      {
+        "type": "content_contains",
+        "value": "async",
+        "description": "Performs refactoring to async/await directly without docs lookup"
       }
     ]
   },
@@ -261,8 +271,8 @@
     "assertions": [
       {
         "type": "tool_use",
-        "tool": "Bash",
-        "description": "Fetches docs with specific topic like 'suspense' or 'server components'"
+        "description": "Fetches docs with specific topic like 'suspense' or 'server components'",
+        "value": "Bash"
       },
       {
         "type": "content_contains",
@@ -277,8 +287,8 @@
     "assertions": [
       {
         "type": "tool_use",
-        "tool": "Bash",
-        "description": "Searches for Spring Boot and fetches annotation docs"
+        "description": "Searches for Spring Boot and fetches annotation docs",
+        "value": "Bash"
       },
       {
         "type": "content_contains",
@@ -293,8 +303,8 @@
     "assertions": [
       {
         "type": "tool_use",
-        "tool": "Bash",
-        "description": "Searches for Drizzle ORM and fetches schema docs"
+        "description": "Searches for Drizzle ORM and fetches schema docs",
+        "value": "Bash"
       },
       {
         "type": "content_contains",
@@ -309,8 +319,8 @@
     "assertions": [
       {
         "type": "tool_use",
-        "tool": "Bash",
-        "description": "Searches for Astro framework and fetches page docs"
+        "description": "Searches for Astro framework and fetches page docs",
+        "value": "Bash"
       },
       {
         "type": "content_contains",
@@ -325,8 +335,13 @@
     "assertions": [
       {
         "type": "tool_use_absent",
-        "tool": "Bash",
-        "description": "Should NOT invoke context7.sh for debugging business logic"
+        "description": "Should NOT invoke context7.sh for debugging business logic",
+        "value": "Bash"
+      },
+      {
+        "type": "content_contains",
+        "value": "undefined",
+        "description": "Debugs the undefined variable issue directly without docs lookup"
       }
     ]
   }
