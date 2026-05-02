@@ -24,7 +24,6 @@
   "aiAgentSkill": "skills/context7/SKILL.md",
   "files": [
     "skills/context7/",
-    "scripts/",
     "LICENSE-MIT",
     "LICENSE-CC-BY-SA-4.0",
     "README.md"
