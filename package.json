@@ -1,0 +1,34 @@
+{
+  "name": "@netresearch/context7-skill",
+  "version": "0.0.0-source",
+  "description": "Netresearch AI skill for fetching up-to-date API docs and framework patterns via Context7.",
+  "license": "(MIT AND CC-BY-SA-4.0)",
+  "author": "Netresearch DTT GmbH (https://www.netresearch.de/)",
+  "homepage": "https://github.com/netresearch/context7-skill",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netresearch/context7-skill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/netresearch/context7-skill/issues"
+  },
+  "keywords": [
+    "ai-agent-skill",
+    "context7",
+    "documentation",
+    "library-docs",
+    "api-docs",
+    "anthropic",
+    "claude-code"
+  ],
+  "aiAgentSkill": "skills/context7/SKILL.md",
+  "files": [
+    "skills/context7/",
+    "LICENSE-MIT",
+    "LICENSE-CC-BY-SA-4.0",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "@netresearch/agent-skill-coordinator": "^0.1"
+  }
+}
