@@ -1,6 +1,6 @@
 ---
 name: context7
-description: "Use when looking up library documentation, API references, framework patterns, or code examples for ANY library (React, Next.js, Vue, Django, Laravel, etc.). Fetches current docs via Context7 REST API. Triggers on: how to use library, API docs, framework pattern, import usage, library example."
+description: "Use when looking up library documentation, API references, framework patterns, or code examples for ANY library (React, Next.js, Vue, Django, Laravel, etc.) and the Context7 MCP server is unavailable or not configured. Fetches the same current docs directly via the Context7 REST API as a fallback, no MCP tool schemas required. Triggers on: how to use library, API docs, framework pattern, import usage, library example."
 license: "(MIT AND CC-BY-SA-4.0)"
 compatibility: "Requires curl or fetch, jq."
 metadata:
@@ -57,12 +57,6 @@ Always extract a specific topic from the user's question. For "How does React Su
 | `library-id` | Yes | From search results, format `/vendor/library` |
 | `topic` | No | Focus area extracted from user query (e.g., `hooks`, `routing`, `validation`) |
 | `mode` | No | `code` (default) for API references; `info` for conceptual guides |
-
-## Mode Selection
-
-Use `code` mode (default) when the user asks for API references, code examples, or implementation patterns.
-
-Use `info` mode when the user asks for conceptual explanations, architecture guides, or migration tutorials.
 
 ## Examples
 
