@@ -1,6 +1,6 @@
 ---
 name: context7
-description: "Use when looking up library documentation, API references, framework patterns, or code examples for ANY library (React, Next.js, Vue, Django, Laravel, etc.) and the Context7 MCP server is unavailable or not configured. Fetches the same current docs directly via the Context7 REST API as a fallback, no MCP tool schemas required. Triggers on: how to use library, API docs, framework pattern, import usage, library example."
+description: "Use when looking up library documentation, API references, framework patterns, or code examples for ANY library (React, Next.js, Vue, Django, Laravel, etc.) and the Context7 MCP server is unavailable or not configured. Fetches the same current docs directly via the Context7 REST API as a fallback. Triggers on: how to use library, API docs, framework pattern, import usage, library example."
 license: "(MIT AND CC-BY-SA-4.0)"
 compatibility: "Requires curl or fetch, jq."
 metadata:
