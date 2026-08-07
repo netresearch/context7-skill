@@ -1,4 +1,5 @@
 {
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "context7",
   "version": "1.6.1",
   "description": "Fetch up-to-date library documentation via Context7 REST API",
@@ -7,12 +8,5 @@
     "url": "https://www.netresearch.de"
   },
   "repository": "https://github.com/netresearch/context7-skill",
-  "license": "(MIT AND CC-BY-SA-4.0)",
-  "support": {
-    "issues": "https://github.com/netresearch/context7-skill/issues",
-    "source": "https://github.com/netresearch/context7-skill"
-  },
-  "skills": [
-    "./skills/context7"
-  ]
+  "license": "(MIT AND CC-BY-SA-4.0)"
 }
