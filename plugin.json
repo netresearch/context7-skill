@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "context7",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "Fetch up-to-date library documentation via Context7 REST API",
   "author": {
     "name": "Netresearch DTT GmbH",

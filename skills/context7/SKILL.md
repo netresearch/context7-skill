@@ -4,7 +4,7 @@ description: "Use when looking up library documentation, API references, framewo
 license: "(MIT AND CC-BY-SA-4.0)"
 compatibility: "Requires curl or fetch, jq."
 metadata:
-  version: "1.7.0"
+  version: "1.7.1"
   repository: "https://github.com/netresearch/context7-skill"
   author: "Netresearch DTT GmbH"
 allowed-tools:
